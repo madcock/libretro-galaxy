@@ -180,6 +180,7 @@ else ifeq ($(platform), sf2000)
 	CFLAGS+=-DSF2000
 	CXXFLAGS=$(CFLAGS) -fno-use-cxa-atexit
 	STATIC_LINKING = 1
+	SKIP_LIBRETRO_COMMON := 1
 
 # The "hopefully will compile"
 else
